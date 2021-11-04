@@ -1,0 +1,409 @@
+[
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_BUSD",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_ROUTER",
+					"type": "address"
+				},
+				{
+					"internalType": "uint16",
+					"name": "_FEES",
+					"type": "uint16"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"inputs": [],
+			"name": "BUSD",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "DEV",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "ROUTER",
+			"outputs": [
+				{
+					"internalType": "contract IDEXROUTER",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_token",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_spender",
+					"type": "address"
+				}
+			],
+			"name": "approveToken",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_DEV",
+					"type": "address"
+				}
+			],
+			"name": "changeDEV",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint16",
+					"name": "_FEES",
+					"type": "uint16"
+				}
+			],
+			"name": "changeFEES",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amountToSwap",
+					"type": "uint256"
+				}
+			],
+			"name": "feeAmount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "fees",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_outToken",
+					"type": "address"
+				}
+			],
+			"name": "fromBNBtoToken",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amountToSwap",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_outToken",
+					"type": "address"
+				}
+			],
+			"name": "fromBUSDtoToken",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amountToSwap",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_inToken",
+					"type": "address"
+				}
+			],
+			"name": "fromTokentoBNB",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amountToSwap",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_inToken",
+					"type": "address"
+				}
+			],
+			"name": "fromTokentoBUSD",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_amountToSwap",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_inToken",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_outToken",
+					"type": "address"
+				}
+			],
+			"name": "fromTokentoToken",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "path0",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "path1",
+					"type": "address"
+				}
+			],
+			"name": "getOutputAmount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_Token",
+					"type": "address"
+				}
+			],
+			"name": "getOutputfromBNBtoToken",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_Token",
+					"type": "address"
+				}
+			],
+			"name": "getOutputfromBUSDtoToken",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_Token",
+					"type": "address"
+				}
+			],
+			"name": "getOutputfromTokentoBNB",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_Token",
+					"type": "address"
+				}
+			],
+			"name": "getOutputfromTokentoBUSD",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "amountIn",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_inToken",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_outToken",
+					"type": "address"
+				}
+			],
+			"name": "getOutputfromTokentoToken",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "amounts",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "token",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "inputBNB",
+					"type": "uint256"
+				}
+			],
+			"name": "getSwapLose",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "BNBlose",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "input",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "withdraw",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"stateMutability": "payable",
+			"type": "receive"
+		}
+	] 

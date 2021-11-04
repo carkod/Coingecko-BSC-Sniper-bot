@@ -1,0 +1,18 @@
+{   
+    
+    "ChainName": "BSC",
+    "Address": "",
+    "SecretKey": "",
+
+    "GasPrice": 6,
+    "RPC": "https://bsc-dataseed.binance.org/",
+
+    "MaximumTokenTAX": 15,
+
+    "Currency": "BUSD",
+    "AmountPerBuy": 10,
+
+    "TakeProfit": 75,
+    "StopLost": 25
+
+}
