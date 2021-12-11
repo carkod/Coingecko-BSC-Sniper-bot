@@ -25,7 +25,10 @@ cd Coingecko-BSC-Sniper-bot
 ```
 Install Requirements:  
 ```python
-python -m pip install -r requirements.txt
+pip3 install venv
+python3 -m venv ./venv
+source ./venv/bin/activate 
+pip3 install -r requirements.txt
 ```  
 
 # Setup & Start
